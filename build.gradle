@@ -55,6 +55,7 @@ dependencies {
     compile('com.atlassian.jira:jira-rest-java-client-core:3.0.0') {
         exclude group: 'org.slf4j'
     }
+    compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
     compile 'com.google.inject.extensions:guice-multibindings:4.0'
     testCompile 'org.jenkins-ci:test-annotations:1.2'
     testCompile 'org.jenkins-ci.plugins:matrix-auth:1.7@jar'
