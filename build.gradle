@@ -68,7 +68,7 @@ dependencies {
     jenkinsTest 'org.jenkins-ci.plugins.workflow:workflow-api:2.15@jar' // used by workflow-job
     jenkinsTest 'org.jenkins-ci.plugins.workflow:workflow-step-api:2.10@jar' // used by workflow-job
 }
-
+/*
 task integrationTest(type: Test) {
     testClassesDir = sourceSets.integrationTest.output.classesDir
     classpath = sourceSets.integrationTest.runtimeClasspath
@@ -79,8 +79,9 @@ task jiraIntegrationTest(type: Test) {
     classpath = sourceSets.jiraIntegrationTest.runtimeClasspath
     mustRunAfter integrationTest
 }
-check.dependsOn integrationTest
 
+check.dependsOn integrationTest
+*/
 tasks.withType(Test) {
     reports.html.destination = file("${reporting.baseDir}/${name}")
 }
