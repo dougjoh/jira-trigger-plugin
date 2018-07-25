@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        jcenter()
+        jcenter { url "http://jcenter.bintray.com/" }
         maven {
             url 'http://repo.jenkins-ci.org/releases/'
         }
@@ -20,7 +20,7 @@ apply plugin: 'org.jenkins-ci.jpi'
 apply plugin: 'codenarc'
 
 repositories {
-    jcenter()
+    jcenter { url "http://jcenter.bintray.com/" }
     maven {
         url "http://repo.jenkins-ci.org/releases/"
     }
